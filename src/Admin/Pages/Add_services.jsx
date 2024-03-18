@@ -50,7 +50,7 @@ function Add_services() {
                         <div className="panel-heading">
                             Add Services
                         </div>
-                        <div >
+                        <div className="panel-body">
                             <form role="form" action='' method='post' onSubmit={submithandle}>
                                 <div className="form-group">
                                     <label>Enter Category Name</label>
