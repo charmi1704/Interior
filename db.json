@@ -1,11 +1,6 @@
 {
   "categories": [
     {
-      "id": "1710690806046",
-      "cate_name": "Office Interior",
-      "img": "https://images.pexels.com/photos/3316924/pexels-photo-3316924.jpeg?cs=srgb&dl=pexels-jonathan-borba-3316924.jpg&fm=jpg"
-    },
-    {
       "id": "1710690888972",
       "cate_name": "Residential Decoration",
       "img": "https://hips.hearstapps.com/hmg-prod/images/bethany-adams-interiors-j-l-jordan-photography-657c85285a3a4.jpg?crop=0.647xw:0.971xh;0,0.0240xh&resize=360:*"
@@ -14,11 +9,6 @@
       "id": "1710691109141",
       "cate_name": "Living Room Interior ",
       "img": "https://hips.hearstapps.com/hmg-prod/images/living-room-ideas-caroline-turner-orchardlane01-copy-1670968014.jpeg?crop=0.670xw:1.00xh;0.166xw,0&resize=640:*"
-    },
-    {
-      "id": "1710691446989",
-      "cate_name": "Modular Kitchen Design",
-      "img": "https://media.designcafe.com/wp-content/uploads/2020/03/21012554/hassle-free-experience-in-modular-kitchens-not-in-civil-kitchens.jpg"
     },
     {
       "id": "1710691618374",
@@ -93,7 +83,7 @@
   "user": [
     {
       "id": "1710565241299",
-      "name": "Charmi",
+      "name": "Charmi Patel",
       "email": "charmi17@gmail.com",
       "password": "1230",
       "mobile": "9632587410",
@@ -116,6 +106,15 @@
       "password": "2306",
       "mobile": "9654231578",
       "img": "https://foyr.com/learn/wp-content/uploads/2022/07/industrial-interior-design-go-neutral.jpg",
+      "status": "Unblock"
+    },
+    {
+      "id": "1710906531443",
+      "name": "Charmi",
+      "email": "admin@gmail.com",
+      "password": "1234",
+      "mobile": "95454484132",
+      "img": "https://foyr.com/learn/wp-content/uploads/2020/04/modern-interior-design-style-1536x860.png",
       "status": "Unblock"
     }
   ],

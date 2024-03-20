@@ -28,6 +28,8 @@ import Subcategories from "./Website/Pages/Subcategories";
 import Alogin from "./Admin/Pages/Alogin";
 import Asignup from "./Admin/Pages/Asignup";
 import Profile from "./Website/Pages/Profile";
+import Admin_profile from "./Admin/Pages/Admin_profile";
+
 
 
 
@@ -65,6 +67,7 @@ function App() {
           <Route path="/Manage_feedback" element={<><AHeader /><Manage_feedback /><AFooter /></>}></Route>
           <Route path="/Alogin" element={<><Alogin/></>}></Route>
           <Route path="/Asignup" element={<><Asignup/></>}></Route>
+          <Route path="/Aprofile" element={<><Admin_profile/></>}></Route>
           
         </Routes>
       </BrowserRouter>

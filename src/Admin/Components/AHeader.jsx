@@ -61,6 +61,7 @@ function AHeader() {
                                         <li><NavLink to="/Manage_user">User</NavLink></li>
                                         <li><NavLink to="/Manage_contact">Contact</NavLink></li>
                                         <li><NavLink to="/Manage_feedback">Feedback</NavLink></li>
+                                        <li><NavLink to="/Aprofile">Profile</NavLink></li>
 
                                        
                                     </ul>
