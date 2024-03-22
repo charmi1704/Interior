@@ -24,11 +24,12 @@ import Manage_services from "./Admin/Pages/Manage_services";
 import Manage_user from "./Admin/Pages/Manage_user";
 import Manage_contact from "./Admin/Pages/Manage_contact";
 import Manage_feedback from "./Admin/Pages/Manage_feedback";
-import Subcategories from "./Website/Pages/Subcategories";
 import Alogin from "./Admin/Pages/Alogin";
 import Asignup from "./Admin/Pages/Asignup";
 import Profile from "./Website/Pages/Profile";
 import Admin_profile from "./Admin/Pages/Admin_profile";
+import Edit_categories from "./Admin/Pages/Edit_categories";
+import View_service from "./Website/Pages/View_service";
 
 
 
@@ -44,8 +45,8 @@ function App() {
           <Route path="/about" element={<><Header /><About /><Footer /></>}></Route>
           <Route path="/gallery" element={<><Header /><Gallery /><Footer /></>}></Route>
           <Route path="/service" element={<><Header /><Service /><Footer /></>}></Route>
+          <Route path="/view_service/:id" element={<><Header /><View_service /><Footer /></>}></Route>
           <Route path="/profile" element={<><Header /><Profile /><Footer /></>}></Route>
-          <Route path="/subcategories" element={<><Header /><Subcategories /><Footer /></>}></Route>
           <Route path="/login" element={<><Login/></>}></Route>
           <Route path="/signup" element={<><Signup/></>}></Route>
           <Route path="/profile" element={<><Profile/></>}></Route>
@@ -57,6 +58,7 @@ function App() {
 
           <Route path="/admin-dashboard" element={<><AHeader /><Dashboard /><AFooter /></>}></Route>
           <Route path="/Add_categories" element={<><AHeader /><Add_categories /><AFooter /></>}></Route>
+          <Route path="/Edit_categories/:id" element={<><AHeader /><Edit_categories /><AFooter /></>}></Route>
           <Route path="/Add_services" element={<><AHeader /><Add_services /><AFooter /></>}></Route>
           <Route path="/Add_employee" element={<><AHeader /><Add_employee /><AFooter /></>}></Route>
           <Route path="/Manage_categories" element={<><AHeader /><Manage_categories /><AFooter /></>}></Route>

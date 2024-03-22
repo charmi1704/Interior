@@ -1,19 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 
-function Service() {
-
-    const redirect=useNavigate();
-
+function View_service() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
         fetch()
     }, []);
 
+    const {id}=useParams();
+
     const fetch = async () => {
-        const res = await axios.get(`http://localhost:3000/categories`);
+        const res = await axios.get(`http://localhost:3000/services?cate_id=${id}`);
         console.log(res.data);
         setData(res.data);
     }
@@ -31,7 +30,7 @@ function Service() {
                         </div>
                         <div className="row">
                             {
-                                data.map((value, index, arr) => {
+                               data && data.map((value, index, arr) => {
 
                                     return (
                                         <div className="col-md-6 col-lg-4 mx-auto">
@@ -41,8 +40,9 @@ function Service() {
                                                 <div className="card-body">
                                                     <h4 className="card-title"><h5>{value.cate_name}</h5></h4>
                                                     <p className="card-text">Some example text.</p>
-                                                    
-                                                        <button className='btn btn-dark' onClick={()=>redirect('/view_service/'+ value.id)}>Read More</button>
+                                                    <NavLink to={"/subcategories"}>
+                                                        <button className='btn btn-dark'>Read More</button>
+                                                    </NavLink>
                                                     {/* <a href="#" className="btn btn-primary">See Profile</a> */}
                                                 </div>
                                             </div>
@@ -154,4 +154,4 @@ function Service() {
     )
 }
 
-export default Service
+export default View_service
